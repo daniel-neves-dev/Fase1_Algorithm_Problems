@@ -3,17 +3,27 @@ middle = list_number[list_number.length / 2]
 
 def search_number(n, list_number, middle)
   list_number.each do |number|
-    if n == middle
+    #The number is in the middle
+    if n == middle 
       return puts "Element #{n} is present at index #{list_number.index(n)}"
+
+      #The number is in above middle
     elsif n > middle
       new_middel = list_number[list_number.length+1 / 2]
       return puts "Element #{n} is present at index #{list_number.index(n)}"
+
+      #The number is in below middle
     elsif n < middle
       new_middel = list_number[list_number.length-1 / 2]
       return puts "#{n} index #{list_number.index(n)}"
     end
   end
 end
+
+6.times{print "*"}
+puts "\nLINEAR SEARCH"
+6.times{print "*"}
+puts
 
 puts "Type a number to serach for"
 n = gets.chomp.to_i 
