@@ -6,11 +6,6 @@ def search_number(n, list_number)
   end
 end
 
-6.times{print "*"}
-puts "\nLINEAR SEARCH"
-6.times{print "*"}
-puts
-
 puts "Type a number to search for"
 n = gets.chomp.to_i
 
